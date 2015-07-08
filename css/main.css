@@ -1,0 +1,220 @@
+/*------------------------------------*\
+    main.css (Site Bérénice Tatoo)
+\*------------------------------------*/
+/**
+ * 
+ * RESET.......................Réinitialisation des styles par défaut
+ * FONT........................Les polices de caractère
+ * COMMUN......................Les structures communes à toutes les pages (body,header,footer ...)
+ * TITRE.......................Le titre du site
+ * MENU........................Le menu du site
+ * ACCUEIL-CAROUSEL............Le carousel de la page d'accueil
+ * ACCUEIL-PRESENTATION........Le bloc de présentation de la page d'accueil
+ * ACCUEIL-NEWS................Le bloc des news de la page d'accueil
+ *
+ */
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img{ border:0;}
+address,caption,cite,code,dfn,var{ font-style:normal; font-weight:normal;}
+ol,ul{ list-style:none;}
+caption,th{ text-align:left;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+q:before,q:after{ content:'';}a
+bbr,acronym{ border:0;}
+
+/*------------------------------------*\
+    $FONT
+\*------------------------------------*/
+@font-face{
+	font-family: general-font;
+	src: url("../fonts/basictitlefont.ttf");
+}
+@font-face{
+	font-family: p-font;
+	src: url("../fonts/typewcond_regular.otf");
+}
+.text-general{
+	font-family: "general-font";
+	color:rgb(253,253,253);
+	
+}
+.text-p{
+	font-family: "p-font";
+	font-size: 1em;
+	color:rgb(253,253,253);
+	text-align: justify;
+}
+.titre-h2{
+	font-style: bold;
+	font-size: 2.4vw;
+}
+.lien-titre:first-child{
+	text-decoration: none;
+	font-size: 5vw;
+    text-align: center;
+}
+.lien-titre:hover{
+	color:rgb(253,253,253);
+}
+
+/**********************************/
+/************ COMMUN **************/
+/**********************************/
+body{
+	background-image: url("../images/interface/fond_contemporary_china.png");
+	background-color: rgb(0,0,0);
+	width: 100%;
+	border: solid 5px blue;
+}
+.page-wrapper{
+	width: 100%;
+	border: solid 1px red;
+}
+.bloc{
+	display: inline-block;
+	background-color: #010101;
+	background-color: rgba(1,1,1,.7);
+	border-radius: 20px;
+	padding: 2%;
+}
+.header{
+	margin-top: 2%;
+}
+.footer{
+	padding-right: 1%;
+	padding-left: 1%;
+}
+.footer-bloc{
+	margin-top: 3%;
+	margin-bottom: 1%;
+	padding: 0.5%;
+}
+.copyright{
+	display: inline-block;
+	float: left;
+	margin-left: 1%;
+}
+.madeBy{
+	display: inline-block;
+	float: right;
+	margin-right: 1%;
+}
+
+
+/**********************************/
+/************ TITRE ***************/
+/**********************************/
+
+.titre{
+	display: block;
+}
+.logo{
+	width: 5vw;
+	margin-bottom: 10px;
+	margin: 5px 5px;
+}
+
+
+/**********************************/
+/************* MENU ***************/
+/**********************************/
+.nav-wrapper{
+	display: block;
+	min-width: 50%;
+}
+nav{
+	clear: both;
+	display: block;
+	font-family: "general-font";
+	font-size: 2vw;
+	margin-top: 1%;
+	margin-left: auto;
+    margin-right: auto;
+    min-width: 25em;
+
+}
+.nav > li > a:hover,
+.nav > li > a:focus{
+	text-decoration: none;
+	background-color: #fff;
+}
+.nav > li.disabled > a{
+	
+	color: #efefef;
+}
+
+.nav-pills > li > a{
+	border-radius: 4px;
+	color : #ffffff;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus{
+
+	color: #000000;
+}
+.nav-pills > li + li{
+
+	
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/**********************************/
+/******* ACCUEIL-CAROUSEL *********/
+/**********************************/
+.carousel-bloc{
+	margin-top: 3%;
+	max-height: 500px;
+}
+.carousel-inner > .item > img{
+    margin: 0 auto;
+}
+
+/**********************************/
+/****** ACCUEIL-PRESENTATION ******/
+/**********************************/
+.presentation-bloc{
+	margin-top: 3%;
+}
+.presentation-img{
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.presentation-bloc > .text-p:first-letter{
+  float: left; /* positionnement de la lettrine dans le conteneur */
+  font: bold 3em p-font;
+  color : rgba(1,1,1,.7);
+  background-color: rgb(250,250,250);
+  border-radius: 5px;
+  padding: 7px 8px;
+  margin: 5px 5px 0 0;
+}
+
+/**********************************/
+/******* ACCUEIL-NEWS *************/
+/**********************************/
+.news-bloc{
+	margin-top: 3%;
+}
+
+/**********************************/
+/***** TATTOOS-GALERIE ************/
+/**********************************/
+.galerie-bloc{
+	margin-top: 3%;
+}
+
+
+
